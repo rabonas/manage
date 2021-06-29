@@ -1,0 +1,21 @@
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 56px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    padding: 0 16px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #242D52;
+}
