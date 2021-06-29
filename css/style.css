@@ -1,3 +1,24 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    line-height: 26px;
+    padding-top: 20px;
+    color: #242D52;
+    opacity: 0.5;
+}
+
+/* ================================
+              HEADER
+================================ */
+
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -19,3 +40,30 @@ nav a {
     font-size: 13px;
     color: #242D52;
 }
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+.link a {
+    padding: 12px 32px;
+    color: #FCF6F5;
+    background-color: #F3603C;
+    box-shadow: 0px 15px 15px -10px #FF9F8E;
+    border-radius: 22px;
+}
+
+.link a:hover {
+    background-color: #F98F75;
+}
+
+/* ==============================
+            INTRO
+============================== */
+
+h1 {
+    font-size: 56px;
+    letter-spacing: -1px;
+    color: #242D52;
+}
+
