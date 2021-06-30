@@ -37,7 +37,7 @@ header {
 .row {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
 }
 
 a {
@@ -114,10 +114,11 @@ h2 {
     position: relative;
     width: 445px;
     padding-left: 93px;
+    counter-increment: list1-counter;
 }
 
 .text-right div::before {
-    content: counter(list1-counter,decimal-leading-zero);
+    content: counter(list1-counter, decimal-leading-zero);
     position: absolute;
     top: 0;
     left: 0;
@@ -134,7 +135,7 @@ h2 {
 =============================== */
 
 .coment {
-    /* width: 1440px; */
+    /* max-width: 1500px; */
     padding: 100px 0 180px;
     text-align: center;
 }
@@ -143,14 +144,19 @@ h2 {
     position: relative;
     width: 540px;
     margin: 100px 15px 60px;
-    padding: 60px 40px 0;
+    padding: 0 40px 1px;
     background: #FAFAFA;
 }
 
+.row2 {
+    overflow-x: hidden;
+    justify-content: space-around;
+}
+
 .column img {
-    position: absolute;
-    top: -35px;
-    left: 165px;
+    width: 72px;
+    height: 72px;
+    transform: translateY(-55%);
 }
 
 .column h3 {
@@ -234,8 +240,26 @@ form button {
     border: none;
 }
 
+.focus {
+    display: none;
+    padding-left: 15px;
+    font-style: italic;
+    font-size: 10px;
+    letter-spacing: -0.0769231px;
+    color: #F33C3C;
+}
+
 form button:hover {
     background-color: #F98F75;
+}
+
+input:focus ~ .focus {
+    display: block;
+}
+
+input:focus {
+    /* color: #F33C3C; */
+    border: 1px solid #F33C3C;
 }
 
 .data {
