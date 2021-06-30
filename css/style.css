@@ -1,4 +1,7 @@
+@import url(./icon.css);
+
 body {
+    font-family: 'Be Vietnam', sans-serif;
     margin: 0;
 }
 
@@ -12,12 +15,18 @@ p {
     padding-top: 20px;
     color: #242D52;
     opacity: 0.5;
+    margin-bottom: 40px;
 }
 
 /* ================================
               HEADER
 ================================ */
 
+header {
+    background-image: url(../img/bg-image.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
 
 .container {
     max-width: 1110px;
@@ -28,20 +37,21 @@ p {
 .row {
     display: flex;
     justify-content: space-between;
+    /* flex-wrap: nowrap; */
 }
 
 a {
     text-decoration: none;
 }
 
-nav a {
+.header-nav a {
     padding: 0 16px;
     font-weight: 500;
     font-size: 13px;
     color: #242D52;
 }
 
-nav a:hover {
+.header-nav a:hover {
     opacity: 0.5;
 }
 
@@ -61,9 +71,178 @@ nav a:hover {
             INTRO
 ============================== */
 
+.center {
+    align-items: center;
+}
+
+.left {
+    width: 445px;
+}
+
 h1 {
     font-size: 56px;
     letter-spacing: -1px;
     color: #242D52;
 }
 
+.left p {
+    padding-right: 100px;
+}
+
+/* ==============================
+             ABOUT
+============================== */
+
+.about {
+    background-image: url(../img/bg-img\ about.png);
+    background-repeat: no-repeat;
+    background-position: 0% 70%;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.714286px;
+    color: #242D52;
+}
+
+.text-right {
+    width: 555px;
+}
+
+.text-right div {
+    position: relative;
+    width: 445px;
+    padding-left: 93px;
+}
+
+.text-right div::before {
+    content: counter(list1-counter,decimal-leading-zero);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 23px;
+    font-weight: bold;
+    letter-spacing: -0.285714px;
+    color: #FFFFFF;
+    background: #F3603C;
+    border-radius: 39px;
+}
+
+/* ===============================
+            COMENT
+=============================== */
+
+.coment {
+    /* width: 1440px; */
+    padding: 100px 0 180px;
+    text-align: center;
+}
+
+.column {
+    position: relative;
+    width: 540px;
+    margin: 100px 15px 60px;
+    padding: 60px 40px 0;
+    background: #FAFAFA;
+}
+
+.column img {
+    position: absolute;
+    top: -35px;
+    left: 165px;
+}
+
+.column h3 {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.285714px;
+    color: #242D52;
+}
+
+/* ====================================
+               ORANGE
+==================================== */
+
+.orange {
+    background-image: url(../img/footer\ bg.jpg);
+}
+
+.orange h2 {
+    padding: 6px 0 62px;
+    color: #FFFFFF;
+}
+
+.link2 a {
+    padding: 12px 32px;
+    color: #F3603C;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 15px -10px #DB5943;
+    border-radius: 22px;
+}
+
+.link2 a:hover {
+    color: #F98F75;
+}
+
+/* =====================================
+                FOOTER
+===================================== */
+
+footer {
+    background-color: #1D1E25;
+    padding: 6px 0 62px;
+}
+
+.logos img {
+    display: block;
+    padding-bottom: 80px;
+}
+
+.logos a {
+    color: #FFFFFF;
+    padding-right: 13px;
+}
+
+.footer-nav a, .achievement a {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 13px;
+    letter-spacing: -0.234375px;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #F3603C;
+}
+
+form input {
+    padding: 14px 16px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    outline: none;
+}
+
+form button {
+    padding: 12px 24px;
+    margin-left: 4px;
+    font-size: 13px;
+    color: #FCF6F5;
+    background: #F3603C;
+    border-radius: 22px;
+    border: none;
+}
+
+form button:hover {
+    background-color: #F98F75;
+}
+
+.data {
+    font-size: 13px;
+    padding-top: 60px;
+    text-align: right;
+    letter-spacing: -0.203125px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
